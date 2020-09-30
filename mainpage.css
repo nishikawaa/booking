@@ -1,0 +1,120 @@
+body{
+  margin: 0;
+}
+
+/** ページ構成 **/
+#pageheader{
+  /* position: relative; */
+  display: block;
+  background-color: black;
+  margin: 0;
+  height: 30px;
+  width: auto;
+  margin: 0;
+}
+
+#page-left{
+  display: inline-block;
+  float: left;
+  width: 17%;
+  height:800px;
+  background-color: yellow;
+  padding-left: 3%;
+}
+
+#page-right{
+  display: inline-block; 
+  width: 75%;
+  height: 850px;
+  background-color: lightblue;
+  padding-left: 5%;
+  padding-top: 0.5%;
+}
+
+#sub-left{
+  display: inline-block;
+  float: left;
+  width: 40%;
+}
+
+#sub-right{
+  display: inline-block;
+  float: right;
+  width: 60%;
+}
+/**************/
+
+#head-icon{
+  size: 20px;
+  border: 1px;
+  padding: 3px 6px;
+  width: 80%;
+  background-color: #4dff73;
+}
+
+
+
+/******************/
+
+#new-reservation{
+  height: 40px;
+  width: 100px;
+}
+
+/* 新規予約ボタン */
+.button-link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  width: 120px;
+  height: 40px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  background: linear-gradient(#fed6e3 0%, #ffaaaa 100%);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+}
+
+.button-link:active {
+  /*押したとき*/
+  -webkit-transform: translateY(2px);
+  transform: translateY(2px);/*沈むように*/
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(#fed6e3 0%, #ffbcbc 100%);/*グラデーションを明るく*/
+}
+
+/*****************/
+
+/**ログアウトボタン**/
+#logout{
+  position: relative;
+  bottom: 21.5px;
+  text-align: right;
+  color: white;
+  margin: 0;
+  padding-right: 5%;;
+}
+
+.logout{
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 8pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 6px 6px;   /* 余白       */
+  background    : #ffffff;     /* 背景色     */
+  color         : #999999;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 0.9;         /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 1px 1px 2px #666666;  /* 影の設定 */
+}
+.logout:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 1;         /* カーソル時透明度 */
+}
+
